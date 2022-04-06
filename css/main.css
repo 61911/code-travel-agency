@@ -48,6 +48,8 @@ h2 {
   letter-spacing: 1px;
   margin: 0;
   text-decoration: none;
+  font-size: 14px;
+  font-family: 'Cabin', sans-serif;
 }
 .snip1143 a:before,
 .snip1143 a:after {
@@ -69,7 +71,7 @@ h2 {
   top: 100%;
   left: 0;
   content: attr(data-hover);
-  color: #6B545C;
+  color: rgb(210, 102, 102);
   white-space: nowrap;
 }
 .snip1143 li:hover a,
@@ -260,7 +262,8 @@ img {
 .footer-content h3{
   font-size: 2.1rem;
   font-weight: 500;
-  text-transform: capitalize;
+  font-family: 'Source Code Pro', monospace;
+  text-transform: lowercase;
   line-height: 3rem;
   color: white;
   text-align: center;
@@ -312,7 +315,7 @@ img {
 .footer-bottom p{
   font-size: 14px;
   word-spacing: 2px;
-  text-transform: capitalize;
+  font-family: 'Source Code Pro', monospace;
 }
 .footer-bottom p a{
  color:#44bae8;
