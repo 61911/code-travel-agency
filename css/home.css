@@ -1,0 +1,283 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    position: relative; 
+    background-image: url("/image/background-cover.jpg");
+   width: 100%; /* for IE 6 */
+   height: 600px;
+}
+.navbar {
+    position: absolute; 
+    top: 0px; 
+    right: 200px;
+}
+.snip1143 {
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .snip1143 * {
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  
+  .snip1143 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 12px;
+    overflow: hidden;
+  }
+  .snip1143 a {
+    padding: 0.3em 0;
+    color: black;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Cabin', sans-serif;
+  }
+  .snip1143 a:before,
+  .snip1143 a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .snip1143 a:before {
+    top: 100%;
+    display: block;
+    height: 3px;
+    width: 100%;
+    content: "";
+    background-color: #c0392b;
+  }
+  .snip1143 a:after {
+    padding: 0.3em 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: rgb(210, 102, 102);
+    white-space: nowrap;
+  }
+  .snip1143 li:hover a,
+  .snip1143 .current a {
+    transform: translateY(-100%);
+  }
+.contact-number {
+    color: black;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 16px;
+    margin-right: 10px;
+    position: absolute; 
+    top: 20px; 
+    right: 40px;
+}
+
+.filter-form {
+    display: flex;
+    
+    justify-content: center;
+    }
+    #searchQueryInput2 {
+    height: 2.8rem;
+    background: #f5f5f5;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1rem;
+    width: 130px;
+    }
+    .form-child {
+    width: 200px; 
+    height: 100px; 
+    padding: 20px 0 0 30px;
+    }
+
+    .filter-form select, input {
+    width: 120px; 
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 7px;
+    }
+#searchQueryInput {
+    height: 2.8rem;
+    background: #f5f5f5;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1rem;
+    }
+    
+    #searchQuerySubmit {
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
+    }
+    
+    #searchQuerySubmit:hover {
+    cursor: pointer;
+    }
+.round-search-bar{
+    display: contents;
+    }
+    .wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    }
+
+.service-blog {
+    display: flex;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    }
+    .child-blog-1 img {
+    width: 500px;
+    background-color: #000;
+    }
+    .child-blog-2 {
+    width: 500px;
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: .01em;
+    line-height: 1.5em;
+    text-transform: none;
+    color: #222;
+    justify-content: center;
+    }
+    .vl {
+    margin-top: 40px;
+    border-left: 2px solid black;
+    height: 200px;
+    width: 20px;
+    padding-bottom: 0px;
+    }
+    .custom-button {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 150px;
+    height: 50px;
+    will-change: transform;
+    margin-left: 70px;
+    }
+    
+    .custom-button:disabled {
+    pointer-events: none;
+    }
+    
+    .custom-button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+    }
+    
+    .custom-button:active {
+    box-shadow: none;
+    transform: translateY(0);
+    }
+    .child-blog-3 {
+    padding-left: 20px ;
+    }
+    .footer-content h3{
+        font-size: 2.1rem;
+        font-weight: 500;
+        font-family: 'Source Code Pro', monospace;
+        text-transform: lowercase;
+        line-height: 3rem;
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+      }
+      .footer-content p{
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+        color: #cacdd2;
+        text-align: center;
+      }
+      .socials{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;
+      }
+      
+      .socials li{
+        margin: 0 10px;
+      }
+      
+      .socials a{
+        text-decoration: none;
+        color: #fff;
+        border: 1.1px solid white;
+        padding: 5px;
+        border-radius: 50%;
+      }
+      
+      .socials a i{
+        font-size: 1.1rem;
+        width: 20px;
+        transition: color .4s ease;
+      }
+      
+      .socials a:hover i{
+        color: aqua;
+      }
+      .footer-bottom{
+        background: #000;
+        width: 100%;
+        padding-bottom: 20px;
+        text-align: center;;
+      }
+      .footer-bottom p{
+        font-size: 14px;
+        word-spacing: 2px;
+        font-family: 'Source Code Pro', monospace;
+      }
+      .footer-bottom p a{
+       color:#44bae8;
+       font-size: 16px;
+       text-decoration: none;
+      }
+      .footer-bottom span{
+         text-transform: uppercase;
+         opacity: .4;
+         font-weight: 200;
+      }

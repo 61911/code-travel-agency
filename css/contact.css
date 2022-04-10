@@ -289,3 +289,18 @@ width: 450px;
      opacity: .4;
      font-weight: 200;
   }
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .Navbar {
+      /* text-align: left; */
+      float: left;
+      display: block;
+      margin-left: -70px;
+      width: 100%;
+    }
+    .round-search-bar {
+      display: none;
+    }
+  }
