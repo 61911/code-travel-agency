@@ -79,6 +79,27 @@ body {
     top: 20px; 
     right: 40px;
 }
+.section-one {
+  display: flex;
+  position: absolute; 
+  top: 90px; 
+  right: 0px;
+}
+.logo {
+  width: 300px;
+  height: 400px;
+}
+.name {
+  width: 50%; 
+  height: 50%; 
+  float:right;
+  margin-top: 70px;
+  font-size: 5em;
+  font-weight: lighter;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(61, 61, 61);
+}
+
 
 .filter-form {
     display: flex;
@@ -281,3 +302,38 @@ body {
          opacity: .4;
          font-weight: 200;
       }
+@media only screen and (max-width: 912px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  .container {
+    background-image: none;
+    width: 100%;
+}
+.filter-form {
+  display: block;
+  width: auto;
+}
+#country-combobox,  input, select {
+  width: 400px;
+}
+
+.service-blog {
+  display: block;
+  justify-content: center;
+  margin-top: 20px;
+}
+.vl {
+  display: none;
+}
+.child-blog-3 {
+  margin-top: 220px;
+}
+#searchQueryInput2 {
+  width: 400px;
+}
+.search-container {
+  width: 400px;
+}
+}
