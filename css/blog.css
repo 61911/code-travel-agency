@@ -1,20 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-  position: relative;
+.cover {
   background-image: url("/image/background-cover.jpg");
   width: 100%;
-  /* for IE 6 */
-  height: 600px;
+  height: 720px;
+  top: 0%;
+  z-index: -1;
 }
 
-.navbar {
-  position: absolute;
-  top: 0px;
-  right: 200px;
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 20px;
 }
 
 .snip1143 {
@@ -83,29 +92,75 @@ body {
 .contact-number {
   color: black;
   font-family: 'Raleway', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   margin-right: 10px;
-  position: absolute;
-  top: 20px;
-  right: 40px;
 }
 
-.section-one {
+.round-search-bar {
+  display: contents;
+}
+
+.wrapper {
   display: flex;
-  position: absolute;
-  top: 90px;
-  right: 0px;
+  align-items: center;
+  width: 100%;
 }
 
-.logo {
+.search-container {
+  display: block;
   width: 300px;
+}
+
+.label {
+  font-size: .625rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: +1.3px;
+  margin-bottom: 1rem;
+}
+
+#searchQueryInput {
+  height: 2.8rem;
+  background: #f5f5f5;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+}
+
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+
+.logo-smile {
   height: 400px;
+  width: 300px;
+  width: 50%;
+  float: left;
 }
 
 .name {
   width: 50%;
   height: 50%;
   float: right;
+}
+
+img {
+  height: 400px;
+  width: 300px;
+}
+
+.name {
   margin-top: 70px;
   font-size: 5em;
   font-weight: lighter;
@@ -113,6 +168,9 @@ body {
   color: rgb(61, 61, 61);
 }
 
+.section-one {
+  margin-left: 600px;
+}
 
 .filter-form {
   display: flex;
@@ -145,70 +203,25 @@ input {
   margin-top: 7px;
 }
 
-#searchQueryInput {
-  height: 2.8rem;
-  background: #f5f5f5;
-  outline: none;
-  border: none;
-  border-radius: 1.625rem;
-  padding: 0 3.5rem 0 1.5rem;
-  font-size: 1rem;
-}
-
-#searchQuerySubmit {
-  width: 3.5rem;
-  height: 2.8rem;
-  margin-left: -3.5rem;
-  background: none;
-  border: none;
-  outline: none;
-}
-
-#searchQuerySubmit:hover {
-  cursor: pointer;
-}
-
-.round-search-bar {
-  display: contents;
-}
-
-.wrapper {
+.service-container {
   display: flex;
-  align-items: center;
-  width: 100%;
+  justify-content: space-between;
+  height: auto;
+
 }
 
-.service-blog {
+.service-block {
   display: flex;
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
-
-.child-blog-1 img {
-  width: 500px;
-  background-color: #000;
-}
-
-.child-blog-2 {
-  width: 500px;
-  padding-left: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 15px;
-  letter-spacing: .01em;
-  line-height: 1.5em;
-  text-transform: none;
-  color: #222;
-  justify-content: center;
+  width: 400px;
+  padding-left: 40px;
+  height: 400px;
+  display: block;
 }
 
 .vl {
   margin-top: 40px;
   border-left: 2px solid black;
-  height: 200px;
-  width: 20px;
-  padding-bottom: 0px;
+  height: 300px;
 }
 
 .custom-button {
@@ -255,8 +268,17 @@ input {
   transform: translateY(0);
 }
 
-.child-blog-3 {
-  padding-left: 20px;
+.service-content {
+  margin-top: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: .01em;
+  line-height: 1.5em;
+  text-transform: none;
+  color: #222;
+  justify-content: center;
 }
 
 .footer-content h3 {
@@ -311,7 +333,7 @@ input {
 
 .footer-bottom {
   background: #000;
-  width: 100%;
+  width: 100vw;
   padding-bottom: 20px;
   text-align: center;
   ;
@@ -335,52 +357,88 @@ input {
   font-weight: 200;
 }
 
-@media only screen and (max-width: 912px) {
-  body {
-    margin: 0px;
-    padding: 0px;
-  }
+/* blog page main css starts here */
 
-  .snip1143 {
-    margin-right: 200px;
+.wrapper {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-  }
+.left-sec {
+  width: 75%;
+  float: left;
+}
 
-  .container {
-    background-image: none;
+.right-sec {
+  width: 25%;
+  float: left;
+}
+
+.single-blog {
+  margin: 20px 60px 60px 60px;
+}
+
+.single-blog .blog-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.single-blog .read-more {
+  line-height: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: rgb(210, 102, 102);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 50px;
+}
+
+.single-blog .read-more:hover {
+  line-height: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #fff;
+  color: #000;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: 4px solid rgb(210, 102, 102);
+}
+
+.right-sec .heading {
+  margin-left: 20px;
+}
+
+.right-sec .blog-box {
+  display: flex;
+  margin: 20px;
+}
+
+.right-sec .blog-box img {
+  height: 70px;
+  width: 82px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.right-sec .blog-box .blog-body {
+  flex: 1;
+}
+
+.right-sec .blog-box .blog-body h4 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+
+  .left-sec,
+  .right-sec {
     width: 100%;
+    padding: 0;
   }
 
-  .filter-form {
-    display: block;
-    width: auto;
-  }
-
-  #country-combobox,
-  input,
-  select {
-    width: 400px;
-  }
-
-  .service-blog {
-    display: block;
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  .vl {
-    display: none;
-  }
-
-  .child-blog-3 {
-    margin-top: 220px;
-  }
-
-  #searchQueryInput2 {
-    width: 400px;
-  }
-
-  .search-container {
-    width: 400px;
-  }
 }
