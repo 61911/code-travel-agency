@@ -187,38 +187,6 @@ input[type=submit]:hover {
   margin-top: -5px;
 }
 
-@media screen and (max-width: 912px) {
-  .section-testimonial {
-    height: 700px;
-  }
-
-  .main-container {
-    flex-direction: column-reverse;
-  }
-
-  .contact-form {
-    width: 100%;
-  }
-
-  .contact-form-content {
-    width: auto;
-  }
-
-  .about-us-content {
-    width: auto;
-  }
-
-  .testimonial {
-    display: block;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .child-section {
-    width: auto;
-  }
-}
-
 .footer-content h3 {
   font-size: 2.1rem;
   font-weight: 500;
@@ -293,4 +261,36 @@ input[type=submit]:hover {
   text-transform: uppercase;
   opacity: .4;
   font-weight: 200;
+}
+
+@media screen and (max-width: 912px) {
+  .section-testimonial {
+    height: 700px;
+  }
+
+  .main-container {
+    flex-direction: column-reverse;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form-content {
+    width: auto;
+  }
+
+  .about-us-content {
+    width: auto;
+  }
+
+  .testimonial {
+    display: block;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .child-section {
+    width: auto;
+  }
 }
