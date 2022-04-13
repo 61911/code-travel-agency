@@ -87,6 +87,7 @@ body {
   width: 100%;
   display: flex;
   margin-top: 50px;
+  justify-content: space-evenly;
 }
 
 .contact-form input[type=text],
@@ -187,6 +188,11 @@ input[type=submit]:hover {
   margin-top: -5px;
 }
 
+.audio {
+  margin-left: 30%;
+  padding-bottom: 20px;
+}
+
 .footer-content h3 {
   font-size: 2.1rem;
   font-weight: 500;
@@ -263,9 +269,28 @@ input[type=submit]:hover {
   font-weight: 200;
 }
 
+footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.business-hour table {
+  color: white;
+  margin: 50px;
+  border: 1px solid white;
+  /* width: 100px; */
+}
+
+table,
+td,
+th {
+  width: 300px;
+  padding: 2px;
+}
+
 @media screen and (max-width: 912px) {
   .section-testimonial {
-    height: 700px;
+    height: 870px;
   }
 
   .main-container {
@@ -292,5 +317,14 @@ input[type=submit]:hover {
 
   .child-section {
     width: auto;
+  }
+
+  footer {
+    display: block;
+  }
+
+  .business-hour {
+    margin-left: 25%;
+    padding-bottom: 1px;
   }
 }
