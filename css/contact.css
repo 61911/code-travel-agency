@@ -127,16 +127,14 @@ input[type=submit]:hover {
 .about-us-title {
   margin-left: 50px;
   margin-top: -10px;
-}
-
-.about-us-title h1 {
+  display: flex;
+  flex-direction: column;
   font-size: 100px;
   font-family: 'Poppins', sans-serif;
 }
 
 .about-us-content {
   margin-left: 50px;
-  margin-top: -80px;
   width: 600px;
   justify-content: center;
   font-size: 16px;
@@ -296,7 +294,13 @@ th {
   .main-container {
     flex-direction: column-reverse;
   }
-
+  .about-us-title{
+    flex-direction: row;
+    font-size: 72px;
+  }
+  .about-us-title div{
+    margin-left: 10px;
+  }
   .contact-form {
     width: 100%;
   }

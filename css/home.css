@@ -7,8 +7,9 @@ body {
   position: relative;
   background-image: url("/asset/image/background-cover.jpg");
   width: 100%;
-  /* for IE 6 */
   height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar {
@@ -18,7 +19,7 @@ body {
 }
 
 .snip1143 {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
@@ -46,7 +47,7 @@ body {
   margin: 0;
   text-decoration: none;
   font-size: 14px;
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
 }
 
 .snip1143 a:before,
@@ -82,7 +83,7 @@ body {
 
 .contact-number {
   color: black;
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 16px;
   margin-right: 10px;
   position: absolute;
@@ -109,10 +110,9 @@ body {
   margin-top: 70px;
   font-size: 5em;
   font-weight: lighter;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: rgb(61, 61, 61);
 }
-
 
 .filter-form {
   display: flex;
@@ -180,6 +180,8 @@ input {
 
 .service-blog {
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding-left: 20px;
   padding-bottom: 20px;
 }
@@ -192,35 +194,35 @@ input {
 .child-blog-2 {
   width: 500px;
   padding-left: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 15px;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
   line-height: 1.5em;
   text-transform: none;
   color: #222;
-  justify-content: center;
 }
 
 .vl {
-  margin-top: 40px;
   border-left: 2px solid black;
+  display: flex;
+  align-items: center;
   height: 200px;
-  width: 20px;
-  padding-bottom: 0px;
+  padding-right: 20px;
 }
 
 .custom-button {
   appearance: none;
   background-color: transparent;
-  border: 2px solid #1A1A1A;
+  border: 2px solid #1a1a1a;
   border-radius: 15px;
   box-sizing: border-box;
-  color: #3B3B3B;
+  color: #3b3b3b;
   cursor: pointer;
   display: inline-block;
-  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
@@ -229,14 +231,13 @@ input {
   outline: none;
   text-align: center;
   text-decoration: none;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   width: 150px;
   height: 50px;
   will-change: transform;
-  margin-left: 70px;
 }
 
 .custom-button:disabled {
@@ -245,7 +246,7 @@ input {
 
 .custom-button:hover {
   color: #fff;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
@@ -262,7 +263,7 @@ input {
 .footer-content h3 {
   font-size: 2.1rem;
   font-weight: 500;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   text-transform: lowercase;
   line-height: 3rem;
   color: white;
@@ -302,7 +303,7 @@ input {
 .socials a i {
   font-size: 1.1rem;
   width: 20px;
-  transition: color .4s ease;
+  transition: color 0.4s ease;
 }
 
 .socials a:hover i {
@@ -314,13 +315,12 @@ input {
   width: 100%;
   padding-bottom: 20px;
   text-align: center;
-  ;
 }
 
 .footer-bottom p {
   font-size: 14px;
   word-spacing: 2px;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 .footer-bottom p a {
@@ -331,7 +331,7 @@ input {
 
 .footer-bottom span {
   text-transform: uppercase;
-  opacity: .4;
+  opacity: 0.4;
   font-weight: 200;
 }
 
@@ -341,19 +341,25 @@ input {
     padding: 0px;
   }
 
-  .snip1143 {
-    margin-right: 200px;
-
-  }
-
   .container {
-    background-image: none;
+    background-position: top;
     width: 100%;
   }
 
+  .section-one {
+    left: 20%;
+  }
+
   .filter-form {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .form-child {
     width: auto;
+    height: auto;
   }
 
   #country-combobox,
@@ -363,17 +369,15 @@ input {
   }
 
   .service-blog {
-    display: block;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin-top: 20px;
   }
 
   .vl {
-    display: none;
-  }
-
-  .child-blog-3 {
-    margin-top: 220px;
+    border: none;
   }
 
   #searchQueryInput2 {
