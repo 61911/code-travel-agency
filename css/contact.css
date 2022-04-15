@@ -146,6 +146,7 @@ input[type=submit]:hover {
 
 .section-testimonial {
   height: 500px;
+  width: 100%;
 }
 
 .section-testimonial h1 {
@@ -294,13 +295,16 @@ th {
   .main-container {
     flex-direction: column-reverse;
   }
-  .about-us-title{
+
+  .about-us-title {
     flex-direction: row;
     font-size: 72px;
   }
-  .about-us-title div{
+
+  .about-us-title div {
     margin-left: 10px;
   }
+
   .contact-form {
     width: 100%;
   }
@@ -330,5 +334,43 @@ th {
   .business-hour {
     margin-left: 25%;
     padding-bottom: 1px;
+  }
+}
+
+/* mobile view */
+@media screen and (max-width: 576px) {
+
+
+  .about-us-title {
+    margin-left: 15px !important;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .about-us-content {
+    margin-left: 0px !important;
+    padding: 30px;
+  }
+
+  .child-section p {
+    width: 359px;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    margin-left: 8%;
+    color: rgb(35, 35, 35);
+  }
+
+  .user-profile {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 50%;
+    margin-top: 20px;
+  }
+
+  audio {
+    margin-left: -50px;
   }
 }
